@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="bed and sleep category icon">
+  <defs>
+    <linearGradient id="bedBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="cushionGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="100%" stop-color="#FACC15"/>
+    </linearGradient>
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#DB2777"/>
+    </linearGradient>
+    <filter id="bedShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1E1B4B" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background circle with smooth gradient -->
+  <circle cx="256" cy="256" r="236" fill="url(#bedBg)" filter="url(#bedShadow)"/>
+  <circle cx="256" cy="256" r="200" fill="#FFFFFF" fill-opacity="0.12"/>
+
+  <!-- Pet Bed Group -->
+  <g filter="url(#bedShadow)">
+    <!-- Back Outer Rim -->
+    <ellipse cx="256" cy="240" rx="170" ry="110" fill="url(#rimGrad)" stroke="#BE185D" stroke-width="8"/>
+
+    <!-- Inner Soft Cushion -->
+    <ellipse cx="256" cy="270" rx="140" ry="85" fill="url(#cushionGrad)" stroke="#CA8A04" stroke-width="6"/>
+
+    <!-- Front Low Cut Rim (entry for cat/dog) -->
+    <path d="M 96 250 C 96 340, 416 340, 416 250 C 416 330, 340 370, 256 370 C 172 370, 96 330, 96 250 Z" 
+          fill="url(#rimGrad)" stroke="#BE185D" stroke-width="8"/>
+
+    <!-- Soft pillow inside bed -->
+    <g transform="translate(256, 260)">
+      <ellipse cx="0" cy="0" rx="60" ry="35" fill="#FFFFFF" fill-opacity="0.85" stroke="#E2E8F0" stroke-width="4"/>
+      <!-- Small cute paw print on pillow -->
+      <ellipse cx="0" cy="5" rx="12" ry="9" fill="#F43F5E"/>
+      <circle cx="-10" cy="-8" r="4.5" fill="#F43F5E"/>
+      <circle cx="-3" cy="-13" r="5" fill="#F43F5E"/>
+      <circle cx="5" cy="-13" r="5" fill="#F43F5E"/>
+      <circle cx="12" cy="-8" r="4.5" fill="#F43F5E"/>
+    </g>
+
+    <!-- Cozy Sleep Zzz Floating -->
+    <g fill="#FEF08A">
+      <path d="M 330 150 L 354 150 L 334 174 L 354 174 L 354 180 L 324 180 L 344 156 L 324 156 Z"/>
+      <path d="M 360 110 L 380 110 L 364 128 L 380 128 L 380 134 L 356 134 L 372 116 L 356 116 Z" transform="scale(0.8) translate(70, -20)"/>
+    </g>
+  </g>
+</svg>

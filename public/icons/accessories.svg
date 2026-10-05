@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="accessories category icon">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </linearGradient>
+    <linearGradient id="leatherGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background circle with smooth gradient -->
+  <circle cx="256" cy="256" r="236" fill="url(#bgGrad)" filter="url(#shadow)"/>
+
+  <!-- Inner soft circle -->
+  <circle cx="256" cy="256" r="200" fill="#FFFFFF" fill-opacity="0.12"/>
+
+  <!-- Pet Collar Ring -->
+  <g filter="url(#shadow)">
+    <!-- Main collar band -->
+    <path d="M 120 230 C 120 150, 392 150, 392 230 C 392 290, 340 330, 256 330 C 172 330, 120 290, 120 230 Z" 
+          fill="none" stroke="url(#leatherGrad)" stroke-width="48" stroke-linecap="round"/>
+    
+    <!-- Collar stitches -->
+    <path d="M 140 230 C 140 170, 372 170, 372 230 C 372 280, 330 315, 256 315 C 182 315, 140 280, 140 230 Z" 
+          fill="none" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round"/>
+
+    <!-- Buckle & Metal Accent -->
+    <rect x="236" y="160" width="40" height="32" rx="8" fill="url(#goldGrad)" stroke="#B45309" stroke-width="4"/>
+    <rect x="248" y="166" width="16" height="20" rx="4" fill="#0D9488"/>
+
+    <!-- Gold Bell / ID Tag Pendant -->
+    <g transform="translate(256, 340)">
+      <circle cx="0" cy="0" r="12" fill="url(#goldGrad)" stroke="#B45309" stroke-width="3"/>
+      <!-- Hanging Ring -->
+      <path d="M 0 -12 L 0 -22" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round"/>
+      <!-- Cute Paw Print on ID Tag -->
+      <circle cx="0" cy="30" r="42" fill="url(#goldGrad)" stroke="#B45309" stroke-width="4"/>
+      <!-- Paw main pad -->
+      <ellipse cx="0" cy="38" rx="18" ry="14" fill="#92400E"/>
+      <!-- 4 Paw toes -->
+      <circle cx="-16" cy="18" r="7" fill="#92400E"/>
+      <!-- toe 2 -->
+      <circle cx="-6" cy="10" r="8" fill="#92400E"/>
+      <!-- toe 3 -->
+      <circle cx="6" cy="10" r="8" fill="#92400E"/>
+      <!-- toe 4 -->
+      <circle cx="16" cy="18" r="7" fill="#92400E"/>
+    </g>
+
+    <!-- Sparkles -->
+    <path d="M 120 130 L 126 146 L 142 152 L 126 158 L 120 174 L 114 158 L 98 152 L 114 146 Z" fill="#FDE047"/>
+    <path d="M 370 120 L 374 132 L 386 136 L 374 140 L 370 152 L 366 140 L 354 136 L 366 132 Z" fill="#FDE047"/>
+  </g>
+</svg>
